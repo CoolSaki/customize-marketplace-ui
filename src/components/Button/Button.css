@@ -1,0 +1,235 @@
+.ui.button {
+  font-style: normal;
+  font-stretch: normal;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  margin: 0px;
+}
+
+/* hover */
+.ui.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* sizes */
+
+.ui.button.mini {
+  padding: 3px 10px;
+  border-radius: 2px;
+  font-size: 10px;
+  line-height: 14px;
+  min-width: 60px;
+}
+
+.ui.button.tiny {
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 16px;
+  min-width: 80px;
+}
+
+.ui.button.small {
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 18px;
+  min-width: 128px;
+}
+
+.ui.button.medium,
+.ui.button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  line-height: 18px;
+  min-width: 128px;
+}
+
+.ui.button.large,
+.ui.button.huge,
+.ui.button.massive {
+  padding: 14px 40px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 24px;
+  min-width: 160px;
+}
+
+/* disabled */
+
+.ui.button.disabled {
+  opacity: 0.5;
+}
+
+.ui.button.primary.disabled {
+  background: linear-gradient(90deg, #ff7c4c 20%, #ffb03a 101.82%) !important;
+}
+
+.ui.button.inverted.disabled {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(90.07deg, #7f64e2 3.5%, #41a6ef 97.01%) !important;
+}
+
+.ui.button.inverted.primary.disabled {
+  background-image: none !important;
+}
+
+/* primary and secondary */
+
+.ui.button,
+.ui.button.secondary {
+  background-color: var(--secondary);
+  color: var(--text-on-secondary);
+}
+
+.ui.button.primary {
+  background: linear-gradient(90deg, #ff7c4c 20%, #ffb03a 101.82%);
+  color: var(--text);
+}
+
+.ui.button:hover,
+.ui.button.secondary:hover,
+.ui.button:active,
+.ui.button.secondary:active,
+.ui.button:focus,
+.ui.button.secondary:focus {
+  background-color: var(--secondary-hover);
+  color: var(--text);
+}
+
+.ui.button.primary:hover,
+.ui.button.primary:active,
+.ui.button.primary:focus {
+  background-color: var(--primary-hover);
+}
+
+/* links */
+
+.ui.button a,
+.ui.button.secondary a,
+.ui.button:hover a,
+.ui.button.secondary:hover a,
+.ui.button:active a,
+.ui.button.secondary:active a,
+.ui.button:focus a,
+.ui.button.secondary:focus a {
+  color: var(--text-on-secondary);
+}
+
+.ui.button.primary a {
+  color: var(--text-on-primary);
+}
+
+/* basic */
+
+.ui.button.basic {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: none;
+  padding: 8px;
+  min-width: auto;
+  background: linear-gradient(
+    90.07deg,
+    #7f64e2 3.5%,
+    #41a6ef 97.01%
+  ) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+.ui.button.basic i {
+  background: linear-gradient(90.07deg, #7f64e2 3.5%, #41a6ef 97.01%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  height: fit-content !important;
+}
+
+.ui.button.basic a {
+  color: var(
+    --danger
+  ) !important; /* this !important is due to an important in semantic-ui-css */
+}
+
+.ui.button.basic:hover,
+.ui.button.basic:focus,
+.ui.button.basic:active {
+  background: linear-gradient(
+    90.07deg,
+    #7f64e2 3.5%,
+    #41a6ef 97.01%
+  ) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  transform: translateY(-2px);
+}
+
+.ui.button.basic:hover a,
+.ui.button.basic:focus a,
+.ui.button.basic:active a {
+  color: var(
+    --primary-hover
+  ) !important; /* this !important is due to an important in semantic-ui-css */
+}
+
+/* button group */
+
+.ui.button.inverted {
+  border-radius: 100rem;
+  padding: 1rem;
+  color: #fff;
+  border: solid 1px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(90.07deg, #7f64e2 3.5%, #41a6ef 97.01%);
+  box-shadow: 2px 1000px 1px #282e4e inset !important;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.ui.button.inverted:hover,
+.ui.button.inverted:focus {
+  border-radius: 100rem;
+  padding: 1rem;
+  color: #fff;
+  border: solid 1px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(90.07deg, #7f64e2 3.5%, #41a6ef 97.01%) !important;
+  box-shadow: 2px 1000px 1px var(--dark) inset !important;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.ui.button.inverted.primary {
+  background-color: transparent;
+  background-image: none;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  box-shadow: none !important;
+}
+
+.ui.button.inverted.primary:hover,
+.ui.button.inverted.primary:focus {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  box-shadow: none !important;
+}

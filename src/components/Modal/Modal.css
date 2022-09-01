@@ -1,0 +1,167 @@
+:root {
+  --modal-border-radius: 12px;
+}
+
+.ui.modal,
+.ui.modal > .content,
+.ui.modal > .header,
+.ui.modal > .description,
+.ui.modal > .actions,
+.ui.modal > .ui.form > .content,
+.ui.modal > .ui.form > .header,
+.ui.modal > .ui.form > .description,
+.ui.modal > .ui.form > .actions {
+  background: #282e4e;
+}
+
+.ui.modal {
+  color: var(--text);
+  border: var(--outline);
+  box-shadow: var(--shadow-3);
+  font-size: 17px;
+}
+
+.ui.modal > .header,
+.ui.modal > .ui.form > .header {
+  color: var(--text);
+  border-bottom: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.ui.modal > .actions,
+.ui.modal > .ui.form > .actions {
+  border-top: none;
+  display: flex;
+}
+
+.ui.modal > .actions > .ui.button,
+.ui.modal > .ui.form > .actions > .ui.button {
+  flex: 1 0 auto;
+}
+
+.ui.modal {
+  border-radius: var(--modal-border-radius);
+}
+
+.ui.modal > .header:not(.ui),
+.ui.modal > .ui.form > .header:not(.ui),
+.ui.modal > .content,
+.ui.modal > .ui.form > .content {
+  margin-bottom: 20px;
+  margin-top: 28px;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 0px;
+}
+
+.ui.modal > .content,
+.ui.modal > .ui.form > .content {
+  width: auto;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: var(--secondary-text) !important;
+}
+
+.ui.modal > .content p {
+  color: var(--secondary-text) !important;
+}
+
+.ui.modal > .actions,
+.ui.modal > .ui.form > .actions {
+  margin-bottom: 32px;
+  margin-top: 28px;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 0px;
+}
+
+.ui.modal .actions > .button:first-child {
+  margin-left: 0px;
+}
+
+.ui.modal > .header:not(.ui),
+.ui.small.modal > .header:not(.ui),
+.ui.small.modal > .ui.form > .header:not(.ui) {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.ui.modal > .description,
+.ui.modal > .ui.form > .description {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-weight: 200;
+  padding: 0px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.ui.modal > :last-child.content,
+.ui.modal > .ui.form > :last-child.content,
+.ui.modal > .actions,
+.ui.modal > .ui.form > .actions {
+  border-bottom-left-radius: var(--modal-border-radius);
+  border-bottom-right-radius: var(--modal-border-radius);
+}
+
+.ui.modal > .header ~ .content {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.ui.modal .header,
+.ui.modal > :first-child:not(.icon),
+.ui.modal > :first-child.dcl.close + .content {
+  border-top-left-radius: var(--modal-border-radius);
+  border-top-right-radius: var(--modal-border-radius);
+}
+
+.ui.modal .header:last-child {
+  border-bottom-left-radius: var(--modal-border-radius);
+  border-bottom-right-radius: var(--modal-border-radius);
+}
+
+/* buttons */
+
+.ui.modal > .actions > .ui.button:not(.primary),
+.ui.modal > .ui.form > .actions > .ui.button:not(.primary),
+.ui.modal .ui.button:not(.primary) {
+  background-color: var(--secondary-on-modal);
+}
+
+.ui.modal > .actions > .ui.button:not(.primary):hover,
+.ui.modal > .ui.form > .actions > .ui.button:not(.primary):hover,
+.ui.modal .ui.button:not(.primary):hover {
+  background-color: var(--secondary-on-modal-hover);
+}
+
+/* input */
+
+/* radio */
+
+.ui.modal .ui.radio.checkbox input.hidden ~ label:before,
+.ui.modal .ui.radio.checkbox input.hidden:focus ~ label:before {
+  border-color: var(--secondary-on-modal);
+}
